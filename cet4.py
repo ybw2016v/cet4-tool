@@ -12,8 +12,11 @@ session.cookies = cookiejar.LWPCookieJar(filename='/home/yu/aadog/cet4cookies.tx
 name=input('姓名：')
 number=input('除去座号的准考证号：')
 startdog=input('起始座号：')
+startdog=int(startdog)
 enddog=input('终止座号：')
+enddog=int(enddog)
 dogtime=input('间隔时间：')
+dogtime=int(dogtime)
 for intdog in range(startdog,enddog):
     if intdog<10:
         pigdog='0'+str(intdog)
